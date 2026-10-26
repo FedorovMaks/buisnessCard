@@ -1,0 +1,75 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Calendar date in ISO 8601 format (YYYY-MM-DD)"""
+scalar Date
+
+type EmploymentPeriod {
+  """Inclusive number of calendar months"""
+  durationInMonths: Int!
+
+  """Empty while the position is current"""
+  endDate: Date
+  isCurrent: Boolean!
+  startDate: Date!
+}
+
+type Experience {
+  achievements: [String!]!
+  company: String!
+  id: ID!
+  period: EmploymentPeriod!
+  position: String!
+}
+
+"""Professional resource such as GitHub or LinkedIn"""
+type Link {
+  id: ID!
+  label: String!
+  url: String!
+}
+
+type Profile {
+  description: String!
+  experience: [Experience!]!
+
+  """
+  Professional title, e.g. "Senior Backend Engineer"
+  """
+  headline: String!
+  id: ID!
+  links: [Link!]!
+  location: String
+  name: String!
+  projects: [Project!]!
+  skills: [Skill!]!
+}
+
+type Project {
+  description: String
+  id: ID!
+  name: String!
+
+  """Source code repository URL"""
+  repositoryUrl: String
+
+  """Skills applied in the project"""
+  technologies: [Skill!]!
+
+  """Live project URL"""
+  url: String
+}
+
+type Query {
+  profile: Profile!
+}
+
+type Skill {
+  """
+  Grouping such as "Languages" or "Databases"
+  """
+  category: String
+  id: ID!
+  name: String!
+}
