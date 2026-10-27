@@ -79,6 +79,10 @@ npm run start:dev
 
 Данные визитки лежат в одном файле: [`src/database/seed/data/profile.data.ts`](src/database/seed/data/profile.data.ts).
 
+## Деплой
+
+Проект разворачивается на [Render](https://render.com) по Blueprint из [`render.yaml`](render.yaml): веб-сервис собирается из того же `Dockerfile`, а `DATABASE_URL` подставляется из управляемой базы PostgreSQL. Порт Render передаёт через переменную `PORT`, которую приложение уже читает. Миграции и заполнение базы выполняются при каждом старте контейнера, так что отдельных шагов для деплоя нет.
+
 ## Структура
 
 ```

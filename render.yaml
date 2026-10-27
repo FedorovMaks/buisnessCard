@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: digital-card-api
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: digital-card-db
+          property: connectionString
+
+databases:
+  - name: digital-card-db
+    plan: free
+    region: frankfurt
+    databaseName: digital_card
+    user: card
+    ipAllowList: []
