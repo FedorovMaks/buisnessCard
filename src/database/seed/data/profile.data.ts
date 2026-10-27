@@ -38,7 +38,7 @@ export const profileData = {
   experience: [
     {
       company: 'ООО «КБ «Молотов»',
-      position: 'Frontend-разработчик',
+      position: 'Fullstack-разработчик',
       startDate: '2024-09-01',
       achievements: [
         'Разрабатываю frontend-часть веб-приложений компании',
