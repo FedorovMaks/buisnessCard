@@ -53,6 +53,7 @@ export const profileData = {
       name: 'Digital Card API',
       description:
         'GraphQL API цифровой визитки: модульная архитектура NestJS, батчинг вложенных данных через DataLoader, автоматические миграции и заполнение базы при старте.',
+      url: 'https://digital-card-api-92x1.onrender.com/graphql',
       repositoryUrl: 'https://github.com/FedorovMaks/buisnessCard',
       technologies: ['TypeScript', 'NestJS', 'GraphQL', 'Prisma', 'PostgreSQL', 'Docker'],
     },

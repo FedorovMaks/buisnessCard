@@ -2,6 +2,10 @@
 
 Цифровая визитка в виде GraphQL API: профиль, ссылки, навыки, опыт работы и проекты.
 
+**Демо (Apollo Sandbox):** <https://digital-card-api-92x1.onrender.com/graphql>
+
+> Сервис размещён на бесплатном тарифе Render и засыпает без запросов, поэтому первое открытие может занять до минуты.
+
 **Стек:** TypeScript · Node.js 24 · NestJS 12 · GraphQL (Apollo Server 5, code-first) · Prisma 7 · PostgreSQL 18 · Docker
 
 ## Быстрый старт
